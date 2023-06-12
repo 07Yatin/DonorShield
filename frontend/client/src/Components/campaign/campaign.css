@@ -1,0 +1,321 @@
+@import url('../css/font.css');
+:root{
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --midnight:#104f55;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --sky: linear-gradient(to top, #c2cbfb 0%, #a6c1ee 100%);
+    --lexend:'Lexend',cursive;
+    --Anton:'Anton',cursive;
+    --Abel:'Abel',cursive;
+}
+h4{
+  display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.read-more{
+    text-decoration:none ;
+    color: var(--text-gray);
+}
+p{
+    font-family: var(--lexend);
+    color: var(--text-gray);
+}
+.Camp{
+    background-image: linear-gradient(45deg, #000401, #171715);
+
+}
+.flexDirection{
+  display: flex;
+  justify-content: space-between;
+
+}
+.profile{
+  display: flex;
+  padding-top: 2rem;
+  gap: 1rem;
+  padding-right: 1rem;
+  
+}
+.profilebtn{
+  cursor: pointer;
+  background-color: #6437b2;
+  padding: 0.5rem;
+  font-family: var(--Abel);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* color: #3f4954; */
+}
+
+ul{
+    list-style-type:none ;
+}
+
+h1{
+    font-family: var(--lexend);
+    font-size: 2.5rem;
+
+}
+h2{
+    font-family: var(--lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+.charad{
+    margin-left: 3rem;
+    color: var(--white);
+    padding: 2rem 0;
+
+}
+.charad .imghand img{
+    /* font-size: 1rem!important; */
+    width: 35px;
+    padding-bottom: 0;
+}
+.charad h2{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    color: #37B2AF;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+
+}
+.charad .chabut{
+    cursor: pointer;
+    background-color: #37B2AF;
+    padding: 0.3rem;
+    font-family: var(--Abel);
+    border-radius: 10px;
+}
+.Camp .charad .chabut{
+  margin-top: 1rem;
+  
+}
+.Camp .charad .chabut .li{
+    font-weight: bold;
+    color: var(--white) !important;
+}
+.charad .chabut Link{
+    color: var(--white) !important;
+    font-weight: bold;
+    font-size: 16px;
+    word-spacing: 3px;
+    font-weight: bold;
+
+}
+
+.charad .h3{
+    font-size: 1.7rem;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+.opencamp{
+    color: var(--white);
+    margin: 0 3rem;
+    
+}
+.opencamp .ohr{
+    max-width: 100rem;
+}
+.Camp .opencamp h2{
+    color: white;
+    font-weight: bold !important;
+    
+}
+/* Compaign----------starts----------------here */
+section.articles {
+  display: grid;
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    margin: 3rem 0;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article Link::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling  */
+  .articles .article-wrapper .article-body h2,h4,.ethval{
+    color: black;
+    font-weight: bold;
+  }
+.articles .article-wrapper .article-body h4{
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.articles .article-wrapper .article-body .read-more{
+  color: #000401;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+.bottom{
+  display: flex;
+  justify-content:space-between;
+}
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+}
+.articles .article-wrapper .article-body h2{
+  margin: 0 0 1px 0;
+  font-family: var(--lexend);
+  font-size: 1.9rem;
+  transition: color 0.3s ease-out;
+
+}
+.articles .article-wrapper .article-body .ethval{
+    margin-top: 1rem;
+    font-family: var(--Abel) !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.article-body .ethval span{
+    font-size: 1rem;
+  /* font-family: 'Times New Roman', Times, serif; */
+
+}
+/* .progress-container {
+    position: absolute;
+    top: 420px;
+    right: 120px;
+    text-align: right;
+    width: 200px;
+}
+
+.progress {
+    background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+} */
+.hr1{
+  max-width: 100%!important;
+    color: #A3978B;
+    position: relative;
+    height: 15px;
+    opacity: 0.6;
+    border: none;
+    bottom: 1rem;
+    background-color: #A3978B;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #5d54d3;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+
+  article Link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bg-color);
+  }
+  
+  /* article a:focus {
+    outline: 1px dotted #28666e;
+  }
+   */
+  /* article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  } */
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    /* --title-color: #28666e; */
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  }
+  
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  
+
+  
+  @media screen and (max-width: 960px) {
+   
+    .article-body p {
+      display: none;
+    }
+  }
+  
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }

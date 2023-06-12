@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --midnight:#104f55;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --sky: linear-gradient(to top, #c2cbfb 0%, #a6c1ee 100%);
+    --lexend:'Lexend',cursive;
+    --Anton:'Anton',cursive;
+    --Abel:'Abel',cursive;
+}
+* {
+    font-family: var(--lexend);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    
+}
+
+.containe{
+    display: grid;
+    padding-top: 1rem;
+    min-height: 100vh;
+    box-shadow: #3f4954;
+    overflow-x: hidden;
+    grid-template-areas: 
+    "main"
+}
+
+.mainclass .post-content{
+    /* border: 1px solid red; */
+    background-color: var(--white);
+    margin: 2rem 12rem;
+    
+    box-shadow: 0px 4px 0px #d6d6d6;
+    border-radius: 1rem;
+}
+
+.mainclass .post-content img {
+    width: 50vh;
+    height: 35vh;
+    border-radius: 1rem;
+    display: block;
+    margin-right: 1rem;
+   
+}
+
+.post-content table thead tr th{
+    padding-left: 1rem;
+}
+.bottomhr{
+    width: 50rem;
+}
+.mainclass .post-content .tabl {
+    align-items: center;
+}
+
+.mainclass .post-content .tabl th{
+    padding-right: 15rem !important;
+    font-size: 1.1rem;
+    justify-content: center;
+}
+.mainclass .post-content .tabl th{
+    justify-content: center;
+}
+.mainclass .post-content .image{
+    border: 2rem;
+    filter: brightness(0.5);
+    color: black;
+}
+
+.post,.ethid,.eth{
+    display: flex;
+}
+
+.post-detail .post-info .post-title{
+    font-size: 1.5rem;
+}
+.post-content .eth .needeth{
+    margin-left: 38rem;
+}
+
+
+.post-detail .post-info span.dayleft{
+    font-size: 1rem;
+    color: var(--midnight);
+}
+.post-content  .ethid .prostatus{
+    margin-left: 38rem;
+    color: #104f55;
+    border: 1px solid #0f0f0f;
+    border-radius: 2rem;
+    padding: 0.2rem 0.8rem;
+    background-color: #a6c1ee;
+    cursor: pointer;
+}
+.post-content  .ethid .headh3{
+    font-family: 'Times New Roman', Times, serif
+}
+
+.post-detail .post-info .probutton{
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(to top, #104f55 0%, #d1d7e1 100%);
+    position: relative;
+    cursor: pointer;
+    margin: 1rem;
+    color: var(--white);
+    border: none;
+}
