@@ -65,10 +65,10 @@ The backend server should now be running and ready to handle requests.
 
 
 ## 🎨Screenshots
- ![Click to view](https://drive.google.com/file/d/1IdcKfl9YrHg-xDEdU_G2FkqWK-VfpktP/view?usp=share_link)
- ![Click to view](https://drive.google.com/file/d/1xdKTv1uotHUzQV-rxvWkvbxzP133DTA4/view?usp=sharing)
- ![Click to view](https://drive.google.com/file/d/1CrRpEq7G5pSgsscP24d0VdV4aU-RJ66k/view?usp=sharing)
- ![Click to view](https://drive.google.com/file/d/1q-XAZexO_TbwE-IFB02ZNv22e4vCedbm/view?usp=sharing)
- ![Click to view](https://drive.google.com/file/d/1zwaffEQnEPAhkIW-FhTRWqf_0-ToedSs/view?usp=sharing)
- ![Click to view](https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=sharing)
- ![Click to view](https://drive.google.com/file/d/1Y00XxIGAqNJvG0omluJNxgwm2FTmBHVH/view?usp=share_link)
+ ![Click to view]!https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
+ ![Click to view]!https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
+ ![Click to view]! https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
+ ![Click to view]https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
+ ![Click to view] (https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link)
+ ![Click to view] https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
+ ![Click to view] https://drive.google.com/file/d/1laOfYON8VueF8dd1BjxDxG-C0s1rLR2o/view?usp=drive_link
