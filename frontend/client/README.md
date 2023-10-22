@@ -42,12 +42,11 @@ npm install ganache-cli@6.12.2
 This guide provides a step-by-step process to implement the project. Please follow the instructions carefully.
 
 Frontend Implementation
+Go to directory
+### `cd client`
 
 Start a local development Ethereum network using Hardhat by running the following command:
 ### 'npx hardhat node'
-
-Go to directory
-### `cd client`
 
 Once the local network is up and running, deploy your contracts by executing the following command:
 ### `npx hardhat run --network localhost scripts/deploy.js`
