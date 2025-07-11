@@ -6,8 +6,7 @@ export default function contact() {
       <section class="contact">
         <div class="content">
             <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aliquid 
-                ullam eligendi facere! Dolor error tempora hic voluptas, repellendus laudantium labore odio sunt obcaecati?</p>
+            <p></p>
         </div>
         <div class="contain">
             <div class="contactInfo">
@@ -17,14 +16,14 @@ export default function contact() {
                     </div>
                     <div class="text">
                         <h2>Address</h2>
-                        <p>Lorem ipsum dolor sit amet<br/> Lorem, ipsum dolor.</p>
+                        <p>Mangaluru<br/></p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa fa-phone"></i></div>
                     <div class="text">
                         <h2>Phone</h2>
-                        <p>+91 9786656424</p>
+                        <p>+91 940297497</p>
                     </div>
                 </div>
                 <div class="box">

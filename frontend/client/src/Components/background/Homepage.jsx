@@ -2,9 +2,10 @@ import React from 'react'
 // import img0 from '../css/back.jpg'
 import "./home.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from '../img/log.png'
-import img2 from '../img/img-02.jpg'
+import img1 from '../img/logo.jpeg'
+import img2 from '../img/store.jpeg'
 import { Link } from 'react-router-dom';
+import { link1 } from 'react-router-dom';
 import img3 from '../img/img-03.jpg'
 import { useEffect } from 'react'
 import { connectWallet, isWallectConnected, loadProjects } from '../../services/blockchain'
@@ -14,7 +15,7 @@ export default function Homepage() {
     <div>
             <div className="bg">
                 <div className="textbg">
-                    <h1 className="h1">DONATE</h1>
+                    <h1 className="h1">DONAR SHIELD</h1>
                     <h2 className="h2"> <span>For the Poor People</span> </h2>
                     <h3 className="h">Be the change you want to see in<br/> the world.</h3> 
                     <div className="btttn">
@@ -39,9 +40,14 @@ export default function Homepage() {
                             <div className="tm-timeline-description-wrap">
                                 <img src={img1} alt="/" className=" tm-img-timeline"/>
                                 <div className="tm-bg-dark-light tm-timeline-description">
-                                    <h3 className="tm-text-green tm-font-400">For all the donors</h3>
-                                    <p>To show the donors all the charity projects available and to let them choose and vote for the ones convincing and agreeing with them</p>
-                                    <div className=" tm-btn-send float-lg-right">Login</div>
+                                    <h3 className="tm-text-green tm-font-400">For the admins</h3>
+                                    {/* <p>To show the donors all the charity projects available and to let them choose and vote for the ones convincing and agreeing with them</p> */}
+                                    <div className="btttn">
+                        <button className="botn" >
+                            <Link className="link1" to="/admindash">admin login</Link> 
+                        </button>
+                    </div>
+                                    {/* <div className=" tm-btn-send float-lg-right">Login</div> */}
                                 </div>
                             </div>
                         </div>

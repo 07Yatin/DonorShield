@@ -36,15 +36,15 @@ const [connectedAccount]= useGlobalState('connectedAccount')
      <div className='Camp'>
       <div className="flexDirection">
         <div className="charad">
-          <h2> <span className="imghand"><img src={hand} alt="/" /></span>  CharityAid</h2>
+          <h2> <span className="imghand"><img src={hand} alt="/" /></span>DonarShield</h2>
           <h3 className="h3">
             Charity we using the Power of <br />
             <span>
-              Crypto & Blockchain
+              Blockchain
             </span>
           </h3>
         </div>
-        <div className="donorName"><h1>Hello, user</h1></div>
+        <div className="donorName"><h1>Hello,Donar</h1></div>
         <div className="profile">
           <div className="connect" onClick={connectWallet}>
            {
@@ -53,7 +53,7 @@ const [connectedAccount]= useGlobalState('connectedAccount')
            }
             </div>
           <div className="logout"><button className='logoutbtn profilebtn' onClick={signOut}>Logout</button></div>
-          <div className="txnHistory"><button className='historybtn profilebtn'><Link to="/transaction">Transaction history</Link></button></div>
+          <div className="txnHistory"><button className='historybtn profilebtn'><Link to="/transactionhistory">Transaction history</Link></button></div>
         </div>
       </div>
 
@@ -78,22 +78,22 @@ const [connectedAccount]= useGlobalState('connectedAccount')
  }
 
  const ProjectCard=({ project })=>(
-  <Link to={"/description/"+project.id}><div className="article-wrapper">
-  <figure>
+  <Link to={"/desc"}><div className="article-wrapper">
+  {/* <figure>
     <img src={project.imageURL} alt="" />
-  </figure>
+  </figure> */}
   <hr className="hr1" />
   <div className="article-body">
     <div className="timeline">
-      {new Date().getTime() > Number(project.expiresAt + '000') ? 'Expired' : daysRemaining(project.expiresAt)+ ' left' }
+      {/* {new Date().getTime() > Number(project.expiresAt + '000') ? 'Expired' : daysRemaining(project.expiresAt)+ ' left' } */}
     </div>
     <h2>{project.title}</h2>
     <h4>by {truncate(project.owner,4,4,11)}</h4>
-    <div className="ethval">Raised: <FaEthereum/>{project.raised} ETH <span></span></div>
+    {/* <div className="ethval">Raised: <FaEthereum/>{project.raised} Rupees<span></span></div> */}
 
     <div className="bottom">
     <div to="#" className="read-more">
-      Target :<FaEthereum/>{project.amount} ETH
+      Target :{project.amount}Rupees
     </div>
     {project.status == 0 ? (<div className="status">open</div>)
     :project.status == 1 ? (<div className="status">Accepted</div>)

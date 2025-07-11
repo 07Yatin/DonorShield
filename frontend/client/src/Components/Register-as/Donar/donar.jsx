@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ud1 from './ud1.jpg'
 import './donar.css'
+import {test1} from "./test.jsx"
 export default function donar() {
   return (
         <div className="containe">
@@ -49,7 +50,7 @@ export default function donar() {
                         <button className="but3"><Link className='link' to="">500 ₹</Link></button>
                 </div>
                 <div className="subb">
-                    <button type="submit" className="subut"><Link className='link' to="">Give Donation</Link></button>
+                    <button type="submit" className="subut" onClick={test1}><Link className='link' to="">Give Donation</Link></button>
                 </div>
                 
             </div>

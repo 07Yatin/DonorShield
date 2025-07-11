@@ -29,7 +29,7 @@ const Transaction=({ backers, projects})=>{
                                         <th>From</th>
                                         <th>Time</th>
                                         <th>Amount Donated</th>
-                                        <th>Refunded</th>
+                                        {/* <th>Refunded</th> */}
                                         <th>To</th>
                                     </tr>
                                 </thead>
@@ -39,7 +39,7 @@ const Transaction=({ backers, projects})=>{
                                             <tr>
                                             <td>{truncate(backer?.owner,4,4,11)}</td>
                                             <td> <Moment fromNow>{backer.timestamp}</Moment> </td>
-                                            <td> <FaEthereum/> {backer?.contribution} ETH </td>
+                                            <td> <FaEthereum/> {backer?.contribution} 1000 Rupees </td>
                                             <td> {backer?.refunded ?'Yes':'No'} </td>
                                             <td> {truncate(contractAddress,4,4,11)} </td>
                                             

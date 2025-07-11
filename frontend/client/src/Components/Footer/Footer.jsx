@@ -6,13 +6,18 @@ export default function Footer() {
             <div className="container">
                 <div className="about-us">
                     <h2>About us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit provident adipisci quam nisi
-                        aspernatur tenetur similique soluta nesciunt obcaecati.
+                    <p>
+
+
+
+DonarShield revolutionizes charitable giving with blockchain, ensuring transparency and trust. Empowering donors to make impactful contributions, we bridge generosity with meaningful change worldwide.  
+
+
                     </p>
                 </div>
                 <div className="newsletter">
-                    <h2>Newsletter</h2>
-                    <p>Stay update with our latest</p>
+                    <h2>            Newsletter</h2>
+                    <p>            Stay update with our latest</p>
                     <div className="form-element">
                         <input type="text" placeholder="Email"/><span><i className="fa fa-chevron-right"></i></span>
                     </div>

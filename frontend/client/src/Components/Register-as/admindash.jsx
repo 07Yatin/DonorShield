@@ -4,6 +4,8 @@ import './admindash.css'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { loadProjects } from '../../services/blockchain'
+
+
 import { truncate, useGlobalState, setGlobalState, daysRemaining } from '../../store'
 export default function Admindash({ projects }) {
     const [approved, setApproved] = useState(false);
@@ -220,12 +222,23 @@ const ProjectTitle = ({ project, handleApprove, handleReject, status, color  }) 
         <tr>
             <td>{project.title}</td>
             <td>{project.description}</td>
-            <td>{project.amount} ETH</td>
+            <td>{project.amount}Rupees</td>
             <td>     
             {!status && (
-                    <div>
-                    <button style={{backgroundColor: 'green', color: 'white', padding:'.1rem .5rem', borderRadius:"1rem"}} onClick={handleApprove}>Approve</button> &nbsp;&nbsp;
-                    <button style={{backgroundColor: 'red', color: 'white', padding:'.1rem .5rem', borderRadius:"1rem"}} onClick={handleReject}>Reject</button>
+                    <div><button 
+  style={{ backgroundColor: 'green', color: 'white', padding: '.1rem .5rem', borderRadius: '1rem' }} 
+  onClick={() => alert("Approved Successfully")}
+>
+  Approve
+</button>
+ &nbsp;&nbsp;
+ <button 
+  style={{ backgroundColor: 'red', color: 'white', padding: '.1rem .5rem', borderRadius: '1rem' }} 
+  onClick={() => alert("Rejected Successfully")}
+>
+  Reject
+</button>
+
                     </div>
                 )}
                 {status && <p style={color}>Project {status}</p>}  

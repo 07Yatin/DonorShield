@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import "./signup.css"
 import React, { useState } from "react";
 import axios from 'axios';
+import {test} from "./test"
 import {useHistory} from "react-router-dom";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,7 +32,7 @@ export default function DonorSignup() {
             axios.post("http://localhost:9002/Donorsignup",donor)
             .then(res=>
                     {toast.success(res.data.message,{position:"top-center", theme:'colored'})
-                    // history.push("/Donarlog")
+                    test()
                 }
                 )
         }

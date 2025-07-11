@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import "./navfoot.css"
-import logo from "../img/logo.jpg"
+import logo from "../img/logo.jpeg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 // import Project from "./Project"

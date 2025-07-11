@@ -34,14 +34,22 @@ useEffect(()=>{
      <div className='Camp'>
       <div className="flexDirection">
         <div className="charad">
-          <h2> <span className="imghand"><img src={hand} alt="/" /></span>  CharityAid</h2>
+          <h2> <span className="imghand"><img src={hand} alt="/" /></span>DonarShield</h2>
           <h3 className="h3">
             Charity we using the Power of <br />
             <span>
-              Crypto & Blockchain
+              Blockchain
             </span>
           </h3>
-          <button className="chabut" type="submit" onClick={()=>{setButtonPopup(true)}}> Create Campaign </button>
+          <button 
+  className="chabut" 
+  aria-expanded={buttonPopup} 
+  aria-controls="create-campaign-popup" 
+  onClick={() => setButtonPopup(true)}
+>
+  Create Campaign
+</button>
+
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
           <Createcamp/>
           </Popup>
@@ -79,22 +87,22 @@ useEffect(()=>{
  }
 
  const ProjectCard=({ pro })=>(
-  <Link to={"/description/"+pro.id}><div className="article-wrapper">
-  <figure>
+  <Link to={"/desc"}><div className="article-wrapper">
+  {/* <figure>
     <img src={pro.imageURL} alt="" />
-  </figure>
+  </figure> */}
   <hr className="hr1" />
   <div className="article-body">
-    <div className="timeline">
+    {/* <div className="timeline">
       {new Date().getTime() > Number(pro.expiresAt + '000') ? 'Expired' : daysRemaining(pro.expiresAt)+ ' left' }
-    </div>
+    </div> */}
     <h2>{pro.title}</h2>
     <h4>by {truncate(pro.owner,4,4,11)}</h4>
-    <div className="ethval">Raised: <FaEthereum/>{pro.raised} ETH <span></span></div>
+    {/* <div className="ethval">Raised: <FaEthereum/>{pro.raised} ETH <span></span></div> */}
 
     <div className="bottom">
     <div to="#" className="read-more">
-      Target :<FaEthereum/>{pro.amount} ETH
+      Target :{pro.amount}Rupees
     </div>
     {pro.status == 0 ? (<div className="status">open</div>)
     :pro.status == 1 ? (<div className="status">Accepted</div>)

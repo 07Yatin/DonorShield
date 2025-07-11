@@ -1,3 +1,29 @@
 {
-  "name": "hardhat-project"
+  "name": "hardhat-project",
+  "devDependencies": {
+    "hardhat": "^2.22.17"
+  },
+  "scripts": {
+    "start": "cd frontend/client && npm start"
+  },
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "mocha": "^8.2.1",
+    "mongoose": "^8.9.2",
+    "react-scripts": "^5.0.1",
+    "solc": "^0.4.17",
+    "web3": "^1.0.0-beta.26"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

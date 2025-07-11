@@ -39,7 +39,7 @@ const TransactionHistory=({ projects})=>{
                                             <tr>
                                             <td>{project.title}</td>
                                             <td> {new Date().getTime() > Number(project.expiresAt + '000') ? 'Expired' : daysRemaining(project.expiresAt)+ ' left' } </td>
-                                            <td> <FaEthereum/> {project?.raised} ETH </td>
+                                            <td> <FaEthereum/> {project?.raised} Rupees </td>
                                             <td> {truncate(contractAddress,4,4,11)} </td>
                                             <td>
                                           <span class="badge warning">Processing</span>

@@ -10,7 +10,7 @@ import BenSignup from "./Components/Register-as/Beneficiary/bensignup";
 import DonorSignup from "./Components/Register-as/Donar/Donorsignup";
 import Admindash from "./Components/Register-as/admindash";
 import Benlog from "./Components/Register-as/Beneficiary/benlog"
-import Createcamp from "./Components/Register-as/Beneficiary/createcamp"
+import Createcamp from "./Components/Register-as/Beneficiary/createcamp";
 import Donarlog from "./Components/Register-as/Donar/Donarlog"
 import Donar from "./Components/Register-as/Donar/donar"
 import Transaction from "./Components/Register-as/Donar/Transaction"
@@ -60,7 +60,13 @@ function App() {
       <Route path="/donar"><Donar/></Route>
       <Route path="/transaction"><Transaction  backers= {backers}/></Route>
       <Route path="/transactionhistory"><TransactionHistory projects= {projects}/></Route>
-      <Route path={"/description/:id"}><Description project= {project} backers= {backers}/></Route>
+      {/* <Route path="/admindash" component={Admindash} /> */}
+
+      {/* <Route path={"/description/:id"}><Description project= {project} backers= {backers}/></Route> */}
+      {/* <Route path="/desc" element={<Description />} /> */}
+      <Route path="/desc">
+        <Description/>
+      </Route>
 
       <Route path='*'><div><h1>Page not found</h1></div></Route>
     </Switch>

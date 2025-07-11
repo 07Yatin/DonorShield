@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "../admin/admin.css"
 import axios from 'axios';
+import {test1} from './test'
 import {useHistory} from "react-router-dom";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,12 +26,13 @@ export default function Donarlog({setLoginDonor}) {
   const login = ()=>{
     const donor = {username, password};
     if(username&&password){
-      axios.post("http://localhost:9002/Donarlog",donor) 
+      axios.post("http://localhost:9002/Donorlog",donor) 
        .then(res=>
         {toast.error(res.data.message,{position:"top-center", theme:'colored'})
           setLoginDonor(res.data.donor)
-          history.push("/project")
+          // history.push("/project")
           window.localStorage.setItem("isLoggedIn",true)
+          test1()
         })
     }
     else{
